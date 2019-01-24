@@ -1,6 +1,6 @@
 import pytest
 
-from sample import add
+from package.sample import add
 
 
 @pytest.mark.parametrize('test_input, expected', [
@@ -8,7 +8,6 @@ from sample import add
     ((-1, 2), 1),
     ((1, -2), -1),
     ((0, 0), 0),
-    ((-10, -10), -20)
-])
+    ((-10, -10), -20)])
 def test_add(test_input, expected):
     assert add(*test_input) == expected
