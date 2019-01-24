@@ -11,3 +11,6 @@ def add(first, second):
     :return:
     """
     return first + second
+
+def sub(first, second):
+    return first - second
